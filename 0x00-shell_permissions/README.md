@@ -17,3 +17,7 @@ Script 6-multiple_permissions adds execute permission to the owner and the group
 Script 7-everybody ads execution permission to the owner, the group and other uses to the file hello.
 
 Script 8-James_Bond removes all permissions for owner and the group while granting other users all permissions.
+
+Script 9-John_Doe sets the mode of the file hello to -rwxr-x-wx.
+
+Script 10-mirror_permissions sets the mode of file hello the same as olleh's mode.
