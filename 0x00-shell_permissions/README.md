@@ -10,4 +10,6 @@ Script 3-new_owner changes the owner of the file hello to the user betty.
 
 Script 4-empty creates an empty file called hello.
 
+Script 5-execute adds execute permissions to the owner of the file hello.
+
 
