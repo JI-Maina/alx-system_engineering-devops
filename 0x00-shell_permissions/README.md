@@ -25,3 +25,5 @@ Script 10-mirror_permissions sets the mode of file hello the same as olleh's mod
 Script 12-directory_permissions creates a directory called my_dir with permissions 751.
 
 Script 13-change_group changes the group owner to school for the file hello.
+
+Script 100-change_owner_and_group changes owner to vincent and the group owner to staf for all files & drectories in the working directory.
