@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 #Displays Best School 10 times.
 
-message="Best School"
 for (( i=0; i<10; i++ )); do
-    echo "$message"
+    echo "Best School"
 done
