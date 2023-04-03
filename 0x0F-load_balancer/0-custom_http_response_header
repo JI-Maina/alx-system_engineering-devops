@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# add a custom Nginx response header X-Served-By with the hostname of the server Nginx is running on as value
+
+# adds custom header inside http block in nginx.conf file
+sudo sed -i.bak "12i\\\tadd_header X-Served-By $HOSTNAME;" /etc/nginx/nginx.conf
+
+# restart nginx server
+sudo service nginx restart
