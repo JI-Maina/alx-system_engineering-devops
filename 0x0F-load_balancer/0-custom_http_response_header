@@ -1,6 +1,14 @@
 #!/usr/bin/env bash
 # add a custom Nginx response header X-Served-By with the hostname of the server Nginx is running on as value
 
+sudo apt update -y
+sudo apt install nginx -y
+
+sudo ufw allow 'Nginx HTTP'
+echo 'Hello World!' > /var/www/html/index.html
+
+sudo service nginx start
+
 # adds custom header inside http block in nginx.conf file
 sudo sed -i.bak "12i\\\tadd_header X-Served-By $HOSTNAME;" /etc/nginx/nginx.conf
 
