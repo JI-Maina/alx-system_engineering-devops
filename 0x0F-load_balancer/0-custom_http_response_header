@@ -7,6 +7,9 @@ sudo apt install nginx -y
 sudo ufw allow 'Nginx HTTP'
 echo 'Hello World!' > /var/www/html/index.html
 
+touch /var/www/html/404.html
+echo "Ceci n'est pas une page" > /var/www/html/404.html
+
 sudo service nginx start
 
 # adds custom header inside http block in nginx.conf file
