@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# accepts one argument and runs the whoami command under the user passed as an argument
+su $1
+whoami
+su root
