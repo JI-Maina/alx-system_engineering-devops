@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # Fix this container so that Nginx is running as the nginx user
 sudo sed -i '/events {/i user nginx;\n' /etc/nginx/nginx.conf
-sudo sed -i '/http }/a \    \tserver {\n    \t\tlisten 8080;\n    \t\tlisten [::]:8080;\n    \t\tserver_name _;\n    \t}' /etc/nginx/nginx.conf
+sudo sed -i '/http {/a \    \tserver {\n    \t\tlisten 8080;\n    \t\tlisten [::]:8080;\n    \t\tserver_name _;\n    \t}' /etc/nginx/nginx.conf
 sudo service nginx restart
