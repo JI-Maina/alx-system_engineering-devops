@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """Export all user data in the JSON format
 
-Format: { "USER_ID": [ 
+Format: { "USER_ID": [
     {"username": "USERNAME", "task": "TASK_TITLE",
     "completed": TASK_COMPLETED_STATUS},
     {"username": "USERNAME", "task": "TASK_TITLE",
@@ -27,7 +27,4 @@ if __name__ == "__main__":
                         'username': user.get('username'),
                         'task': todo.get('title'),
                         'completed': todo.get('completed')
-                        } for todo in todos ]}, f)
-    
-    #print(todos)
-    #print(users)
+                        } for todo in todos]}, f)
