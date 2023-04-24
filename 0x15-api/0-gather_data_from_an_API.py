@@ -2,10 +2,12 @@
 """This module provides a script that given an employee ID, returns
 information about his/her TODO list progress.
 """
-import requests
-from sys import argv
 
 if __name__ == "__main__":
+
+    import requests
+    from sys import argv
+
     pay = {'userId': argv[1]}
     pay1 = {'id': argv[1]}
 
