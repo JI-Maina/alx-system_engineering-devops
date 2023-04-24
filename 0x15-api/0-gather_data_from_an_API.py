@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""given employee ID, returns information about his/her TODO list progress"""
+"""
+given employee ID, returns information about his/her TODO list progress
+"""
 
 from sys import argv
 import requests
