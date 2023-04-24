@@ -1,8 +1,9 @@
 #!/usr/bin/python3
-"""given employee ID, returns information about his/her TODO list progress"""
-
-from sys import argv
+"""This module provides a script that given an employee ID, returns
+information about his/her TODO list progress.
+"""
 import requests
+from sys import argv
 
 if __name__ == "__main__":
     pay = {'userId': argv[1]}
@@ -13,15 +14,15 @@ if __name__ == "__main__":
 
     user = u.json()
     todos = r.json()
+    name = user[0]['name']
 
     complete = 0
     for todo in todos:
-        if todo["completed"] == True:
+        if todo["completed"]:
             complete = complete + 1
 
-    print("Employee {} is done with tasks({}/{}):"
-            .format(user[0]['name'], complete, len(todos)))
+    print(f"Employee {name} is done with tasks({complete}/{len(todos)}):")
 
     for todo in todos:
-        if todo["completed"] == True:
-            print('     ' + todo['title'])
+        if todo["completed"]:
+            print('\t ' + todo['title'])
