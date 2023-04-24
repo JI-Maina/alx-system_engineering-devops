@@ -13,15 +13,15 @@ if __name__ == "__main__":
 
     user = u.json()
     todos = r.json()
+    name = user[0]['name']
 
     complete = 0
     for todo in todos:
-        if todo["completed"] == True:
+        if todo["completed"]:
             complete = complete + 1
 
-    print("Employee {} is done with tasks({}/{}):"
-            .format(user[0]['name'], complete, len(todos)))
+    print(f"Employee {name} is done with tasks({complete}/{len(todos)}):")
 
     for todo in todos:
-        if todo["completed"] == True:
-            print('     ' + todo['title'])
+        if todo["completed"]:
+            print('\t ' + todo['title'])
