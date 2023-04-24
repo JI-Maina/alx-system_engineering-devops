@@ -1,10 +1,12 @@
 #!/usr/bin/python3
 """Given employee ID, this script exports data in JSON format.
 
-Format must be: { "USER_ID": [{
-        "task": "TASK_TITLE",
-        "completed": TASK_COMPLETED_STATUS,
-        "username": "USERNAME"} ... ]}
+Format must be: { "USER_ID": [
+    {"task": "TASK_TITLE", "completed": TASK_COMPLETED_STATUS,
+    "username": "USERNAME"},
+    {"task": "TASK_TITLE", "completed": TASK_COMPLETED_STATUS,
+    "username": "USERNAME"},
+    ... ]}
 
 File name must be: USER_ID.json
 """
@@ -30,4 +32,4 @@ if __name__ == "__main__":
             'task': todo.get('title'),
             'completed': todo.get('completed'),
             'username': username,
-            } for todo in todos ]}, f)
+            } for todo in todos]}, f)
