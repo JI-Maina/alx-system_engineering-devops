@@ -1,6 +1,12 @@
 #!/usr/bin/python3
 """This module provides a script that given an employee ID, returns information
 about his/her TODO list progress.
+
+Format:
+    Employee EMPLOYEE_NAME is done with tasks(N0_OF_DONE_TASKS/N0_OF_TASKS):
+    EMPLOYEE_NAME: name of the employee
+    NUMBER_OF_DONE_TASKS: number of completed tasks
+    TOTAL_NUMBER_OF_TASKS: total number of tasks
 """
 
 if __name__ == "__main__":
