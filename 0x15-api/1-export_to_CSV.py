@@ -22,7 +22,7 @@ if __name__ == "__main__":
         todo['un'] = username
 
     # Open csv file for writing
-    with open(f'{argv[1]}.csv', 'w', newline='') as f:
+    with open('{}.csv'.format(argv[1]), 'w', newline='') as f:
         writer = csv.writer(f, quoting=csv.QUOTE_ALL)
 
         for todo in todos:

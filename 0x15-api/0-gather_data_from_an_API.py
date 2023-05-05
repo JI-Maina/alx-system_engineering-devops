@@ -28,7 +28,8 @@ if __name__ == "__main__":
         if todo["completed"]:
             complete = complete + 1
 
-    print(f"Employee {name} is done with tasks({complete}/{len(todos)}):")
+    print("Employee {} is done with tasks({}/{}):"
+            .format(name, complete, len(todos)))
 
     for todo in todos:
         if todo["completed"]:

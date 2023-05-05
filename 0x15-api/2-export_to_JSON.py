@@ -27,7 +27,7 @@ if __name__ == "__main__":
     username = user[0]['username']
     id = argv[1]
 
-    with open(f'{id}.json', 'w') as f:
+    with open('{}.json'.format(id), 'w') as f:
         json.dump({id: [{
             'task': todo.get('title'),
             'completed': todo.get('completed'),
