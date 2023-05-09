@@ -6,10 +6,12 @@ import requests
 
 def number_of_subscribers(subreddit):
     """queries the Reddit API
-    
+
     args: subreddit - subreddit name
-    
-    returns the number of subscribers"""
+
+    returns the number of subscribers
+    """
+
     url = 'https://www.reddit.com/r/{}/about.json'.format(subreddit)
     headers = {"User-Agent": "ChangeMeClient/0.1 by Makaburi_McMaina"}
     res = requests.get(url, headers=headers, allow_redirects=False)
