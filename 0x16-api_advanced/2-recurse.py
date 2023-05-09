@@ -6,7 +6,7 @@ import requests
 
 def recurse(subreddit, hot_list=[]):
     """queries the Reddit API
-    
+
     args:
         subreddit - subreddit name
 
